@@ -34,7 +34,7 @@ def produce_collage(images):
     l = len(images)
     printProgress(count, l, prefix='generating collage:', suffix='Complete', barLength=50)
 
-    background = Image.new('RGBA', (600, 1500), (255, 255, 255, 255))
+    background = Image.new('RGBA', (1500, 600), (255, 255, 255, 255))
 
     for img in images:
         croped_img = random_crop(img).rotate(random.randint(5, 360))
